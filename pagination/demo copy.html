@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Huge Grid Demo</title>
+	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<style type="text/css">
+		.show-grid [class^=col-] {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #eee;
+			background-color: rgba(86,61,123,.15);
+			border: 2px solid #ddd;
+			border: 2px solid rgba(86,61,123,.2);
+			height: 1080px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div id= "slides">
+		<div style="width: 6000px; margin: 0 auto;">
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+		</div>
+
+		<div style="width: 6000px; margin: 0 auto;">
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-9">.col-lg-9</div>
+			</div>
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-9">.col-lg-9</div>
+			</div>
+		</div>
+
+		<div style="width: 6000px; margin: 0 auto;">
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+		</div>
+
+		<div style="width: 6000px; margin: 0 auto;">
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-6">.col-lg-6</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+			<div class="row show-grid">
+				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-6">.col-lg-6</div>
+				<div class="col-lg-3">.col-lg-3</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 9400,
+        height: 5280,
+        play: {
+          active: false,
+          auto: false,
+          interval: 1000,
+          swap: true,
+          pauseOnHover: true
+        }
+      });
+    });
+  </script>
+</body>
+</html>

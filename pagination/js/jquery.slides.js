@@ -9,11 +9,11 @@
       height: 528,
       start: 1,
       navigation: {
-        active: false,
+        active: true,
         effect: "slide"
       },
       pagination: {
-        active: false,
+        active: true,
         effect: "slide"
       },
       touch: {

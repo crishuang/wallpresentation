@@ -5,8 +5,6 @@
 	<meta charset="UTF-8">
 	<title>Huge Grid Demo</title>
 	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
-	<script src="jquery.slides.js"></script>
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<style type="text/css">
 		.show-grid [class^=col-] {
 			padding-top: 10px;
@@ -14,13 +12,12 @@
 			background-color: #eee;
 			background-color: rgba(86,61,123,.15);
 			border: 2px solid #ddd;
-			border: 2px solid rgba(86,61,123,.2);
+			border: 2px solid #000;
 			height: 1080px;
 		}
 	</style>
 </head>
 <body>
-<div class="container">
 	<div id= "slides">
 		<div style="width: 6000px; margin: 0 auto;">
 			<div class="row show-grid">
@@ -40,42 +37,53 @@
 		<div style="width: 6000px; margin: 0 auto;">
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-9">.col-lg-9</div>
+				<div class="col-lg-9" style="background-color: rgba(99, 3, 240, 0.15);">.col-lg-9</div>
 			</div>
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-9">.col-lg-9</div>
+				<div class="col-lg-9" style="background-color: rgba(99, 3, 240, 0.15);">.col-lg-9</div>
 			</div>
 		</div>
 
 		<div style="width: 6000px; margin: 0 auto;">
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(180, 40, 113, 0.15);">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(77, 52, 65, 0.15)">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(199, 62, 133, 0.15);">.col-lg-3</div>
 			</div>
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(92, 5, 50, 0.15);">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(240, 212, 227, 0.15);">.col-lg-3</div>
+				<div class="col-lg-3" style="background-color: rgba(245, 149, 200, 0.15);">.col-lg-3</div>
 			</div>
 		</div>
 
 		<div style="width: 6000px; margin: 0 auto;">
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-6">.col-lg-6</div>
-				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-6" style="background-color: rgba(245, 149, 200, 0.15);">.col-lg-6</div>
+				<div class="col-lg-3" style="background-color: rgba(240, 212, 227, 0.15);">.col-lg-3</div>
 			</div>
 			<div class="row show-grid">
 				<div class="col-lg-3">.col-lg-3</div>
-				<div class="col-lg-6">.col-lg-6</div>
-				<div class="col-lg-3">.col-lg-3</div>
+				<div class="col-lg-6" style="background-color: rgba(245, 149, 200, 0.15);">.col-lg-6</div>
+				<div class="col-lg-3" style="background-color: rgba(240, 212, 227, 0.15);">.col-lg-3</div>
 			</div>
 		</div>
 	</div>
-	</div>
+
+	<script src="js/jquery-1.11.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
+
 </body>
 </html>
